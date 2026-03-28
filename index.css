@@ -1,0 +1,48 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: stretch;
+    height: 100vh;
+    background-color: #2ea6a6;
+    background-image: url("Concert image.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(1px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.key {
+    display: flex;
+    min-width: 4rem;
+    flex-direction: column;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: #00000087;
+    cursor: pointer;
+}
+
+.letter {
+    color: #ffffff;
+    font-size: 1.3rem;
+    transition: font-size 0.7s;
+}
+
+.playing {
+    border: 2px solid #ffe100;
+    box-shadow: 0px 0px 10px #f6ff00;
+    scale: 1.1;
+}
+
+.sound {
+    color: #ffe100;
+    font-size: 0.8rem;
+}
